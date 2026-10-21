@@ -7,7 +7,7 @@ let checked = 0;
 function node(key) {
   if (!nodes.has(key)) nodes.set(key, {
     innerHTML: '', textContent: '', value: '', dataset: {}, style: {}, open: false,
-    classList: { add(){}, remove(){}, toggle(){} },
+    classList: { add(){}, remove(){}, toggle(){}, contains(){return false} },
     setAttribute(){}, focus(){}, addEventListener(){},
     showModal(){ this.open=true; }, close(){ this.open=false; }
   });
@@ -17,7 +17,7 @@ const context = vm.createContext({
   console, structuredClone, Date, URL, Blob,
   setTimeout:()=>1, clearTimeout(){}, setInterval:()=>1,
   document:{querySelector:node,querySelectorAll:()=>Array(checked).fill({}),documentElement:{dataset:{}},addEventListener(){},createElement:()=>({click(){}})},
-  window:{addEventListener(){},scrollTo(){}},location:{hash:''},
+  window:{addEventListener(){},scrollTo(){},matchMedia:()=>({matches:false,addEventListener(){}})},location:{hash:''},
   localStorage:{getItem:()=>null,setItem(){}}
 });
 vm.runInContext(fs.readFileSync(require('node:path').join(__dirname,'../dist/app.js'),'utf8'),context);

@@ -58,4 +58,4 @@ This prototype stores non-upload demo state in browser `localStorage` and keeps 
 
 ## Verification limits
 
-The initial delivery includes JavaScript syntax checks and structural/source checks. The managed execution environment blocked listening on a local port. Browser interaction and responsive visual checks must be completed on an available hosted build; no formal accessibility certification or real-user test is claimed.
+Verified with JavaScript syntax checks, structural HTML checks and the dependency-free workflow smoke test. A hosted browser walkthrough completed production creation, generation, mandatory approval checks, recorded approval and visitor filtering. Desktop light/dark modes and a 390px mobile breakpoint were inspected; no browser errors were observed. The execution environment blocked local listening and Sites Git access, so the working demo is hosted on GitHub Pages. No formal accessibility certification or real-user test is claimed.

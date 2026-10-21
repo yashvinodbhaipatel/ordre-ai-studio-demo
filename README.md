@@ -2,6 +2,10 @@
 
 An independent product design and development concept by **Yash Patel**, exploring a luxury fashion image-production platform from brand direction to human approval. This is a portfolio prototype, not an official ORDRE product.
 
+**[Open the live demo](https://yashvinodbhaipatel.github.io/ordre-ai-studio-demo/)**
+
+![ORDRE Studio preview](docs/screenshots/ordre-studio-preview.png)
+
 ## Experience
 
 - Editorial overview and searchable, filterable productions.
@@ -41,6 +45,10 @@ Open `http://localhost:4173`. For a Node installation, any static web server can
 Generation is scripted and the displayed images are existing editorial references. Scores, collection counts and collaborators are illustrative. The app does not generate or clone people, transform uploaded products, process payments, call an AI provider, or enforce server-side authentication. Packshot and detail-crop options demonstrate workflow intent; their simulated result still uses reference imagery, not a newly rendered packshot.
 
 Product uploads remain in memory in the current browser session. Production metadata, brand guidelines, reviews and display preferences are saved in `localStorage`. No team synchronization, GDPR certification or EU data residency is claimed. Remote reference images and Google Fonts make third-party requests; replace them with licensed, self-hosted assets before production use.
+
+## Verification
+
+Run `node tests/workflow-smoke.cjs` for dependency-free workflow and permission checks. The deployed demo was also checked in the browser for the production wizard, completion, approval gating, visitor view, dark mode and a 390px mobile layout. No browser errors were observed during that walkthrough.
 
 ## Production next steps
 

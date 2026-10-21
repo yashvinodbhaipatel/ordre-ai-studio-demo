@@ -10,6 +10,7 @@
 <body>
 <a class="skip-link" href="#main">Skip to workspace</a>
 <aside class="sidebar" id="sidebar">
+  <button class="icon-button mobile-close" data-action="close-menu" aria-label="Close navigation">×</button>
   <a class="wordmark" href="#studio" aria-label="ORDRE Studio home">ORDRE<span>STUDIO</span></a>
   <div class="workspace"><span class="workspace-mark">A.</span><span><strong>Atelier No. 04</strong><small>Brand workspace</small></span><span class="workspace-chevron">⌄</span></div>
   <p class="nav-label">WORKSPACE</p>
@@ -18,7 +19,7 @@
   <button class="profile" data-action="about"><span class="avatar">YP</span><span><strong>Yash Patel</strong><small>Concept designer</small></span><span>↗</span></button></div>
 </aside>
 <div class="app-shell">
-  <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" aria-label="Open navigation" data-action="menu">☰</button><span>Workspace</span><span class="slash">/</span><strong id="breadcrumb">Overview</strong></div><div class="top-actions"><span class="concept-label">INDEPENDENT CONCEPT</span><label class="sr-only" for="role">Preview as role</label><select id="role" title="Preview permissions by role"><option>Producer</option><option>Administrator</option><option>Operator</option><option>ORDRE visitor</option></select><button class="icon-button" data-action="theme" id="theme-button" aria-label="Switch to dark mode"></button><button class="icon-button notification-button" data-action="activity" aria-label="View activity"></button></div></header>
+  <header class="topbar"><div class="breadcrumb"><button class="icon-button mobile-menu" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false" data-action="menu">☰</button><span>Workspace</span><span class="slash">/</span><strong id="breadcrumb">Overview</strong></div><div class="top-actions"><span class="concept-label">INDEPENDENT CONCEPT</span><label class="sr-only" for="role">Preview as role</label><select id="role" title="Preview permissions by role"><option>Producer</option><option>Administrator</option><option>Operator</option><option>ORDRE visitor</option></select><button class="icon-button" data-action="theme" id="theme-button" aria-label="Switch to dark mode"></button><button class="icon-button notification-button" data-action="activity" aria-label="View activity"></button></div></header>
   <main id="main" tabindex="-1"></main>
   <footer class="site-footer"><span>ORDRE STUDIO <span class="footer-dot">·</span> An independent concept by Yash Patel</span><button class="text-button" data-action="about">About this prototype ↗</button></footer>
 </div>
